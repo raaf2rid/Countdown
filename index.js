@@ -181,6 +181,12 @@ function countdown(dateEnd) {
         
         
         const world = document.querySelector('#world')
+        const timer = document.querySelector('.timer')
+
+        timer.style.top ="0"
+        timer.style.height ="100vh"
+
+
       
         
         freedom.innerHTML = 

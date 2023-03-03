@@ -71,46 +71,46 @@ body{
 
 }
 
-.timer-div{
-  padding: 2rem;
-  top: 25%;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.4);
-  
-}
+
 
 .timer {
-  
-  width: max-content;
-  position: relative;
+  top: 25%;
+  width: 100%;
+  position: absolute;
   font-size: 1.5rem;
   color: #fff;
   z-index: 10000;
-
   letter-spacing: 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   text-align: center;
   font-weight: 800;
-
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-shadow: none;
-    color: #e2e2e2;
+  color: #e2e2e2;
+}
+
+.countdown{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 
-
 #freedom{
-
+  z-index: 1000000;
   font-size: 1.5rem;
   text-shadow: none;
-    color: #e2e2e2;
-  transform: translate(-208px, 10px);
+  color: #e2e2e2;
+
   font-weight: 800;
   /* background-color: rgba(0, 0, 0, 0.2); */
   padding: 1rem;
@@ -158,34 +158,45 @@ span{
 .free{
   font-size: 3.5rem; 
   margin-left:-50px;
+  color: #ffee00;
 }
 
 @media only screen and (max-width: 600px) {
 
-  .timer-div{
-   
-    top: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
+  .countdown{
+    padding-left: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .timer{
-    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    position: absolute;
     font-size: 1rem;
     text-shadow: none;
     font-weight: 800;
     color: #e2e2e2;
   }
   #freedom {
-   
+    /* position: relative; */
+    /* border: 1px solid red; */
     transform: translate(0px, 0px);
     text-shadow: none;
     font-weight: 800;
     color: #e2e2e2;
+    width: 100%;
+    text-align: left;
+    align-items: center;
   }
   span{
     align-items: center;
   }
   .free{
     margin-left: 0;
+    font-size: 2.2rem; 
   }
 }
