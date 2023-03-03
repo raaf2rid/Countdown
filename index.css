@@ -164,7 +164,7 @@ span{
 @media only screen and (max-width: 600px) {
 
   .countdown{
-    padding-left: 1rem;
+    padding-left: 2rem;
     flex-wrap: wrap;
     justify-content: flex-start;
     text-align: left;
@@ -180,10 +180,13 @@ span{
     text-shadow: none;
     font-weight: 800;
     color: #e2e2e2;
+    background-color: rgba(0, 0, 0, 0.6);
+
   }
   #freedom {
     /* position: relative; */
     /* border: 1px solid red; */
+    padding-left: 2rem;
     transform: translate(0px, 0px);
     text-shadow: none;
     font-weight: 800;
