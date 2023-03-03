@@ -105,7 +105,15 @@ function countdown(dateEnd) {
           lastBox.style.background = "rgb(238,174,202)"
           lastBox.style.color = "transparent"
           lastBox.style.backgroundColor = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)"
+          
+          if(days == 0){
+              
 
+              secondsRemaining = (hours * 60 + minutes) * 60 + seconds
+
+
+            lastBox.style.width = `calc(${(100*(secondsOfDay- secondsRemaining))/secondsOfDay}% / 10)`
+          }
   
         }
 
@@ -147,7 +155,7 @@ function countdown(dateEnd) {
         `
         <span>Yes! Yes! Yes! 
         <br>
-        250days have passed!<br>
+        250 days have passed!<br>
         The wait is Over <br>And...
         <br>
         <br>
@@ -165,7 +173,7 @@ function countdown(dateEnd) {
 }
 
 
-// countdown('3/3/2023 9:1:00 AM');
+// countdown('2/3/2023 1:8:00 PM');
 
 
 
@@ -177,7 +185,7 @@ countdown('11/8/2023 9:38:00 PM')
   
 
 
-// Condetti
+// Confetti
 
 
 const NUM_CONFETTI = 350;
