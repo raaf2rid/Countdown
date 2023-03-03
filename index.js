@@ -147,11 +147,13 @@ function countdown(dateEnd) {
 
 
       const whiteBoxes = document.querySelector('.white-boxes')
-      
+
+     
 
       whiteBoxes.innerHTML = boxes2.join('')
 
-   
+      whiteBoxes.style.opacity = "0.3"
+      
         
         
         const world = document.querySelector('#world')
