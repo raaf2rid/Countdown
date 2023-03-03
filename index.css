@@ -87,7 +87,7 @@ body{
   
   width: max-content;
   position: relative;
-  font: 3rem Courier;
+  font-size: 1.5rem;
   color: #fff;
   z-index: 10000;
   color: rgb(0, 0, 0);
@@ -104,10 +104,10 @@ body{
 
 #freedom{
 
-  font-size: 4rem;
+  font-size: 1.5rem;
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff, 0px -2px 0 #fff, 2px -3px 2px rgba(0,0,0,0);
-  transform: translate(-280px, 10px);
+  transform: translate(-230px, 10px);
   font-weight: 800;
   /* background-color: rgba(0, 0, 0, 0.2); */
   padding: 1rem;
