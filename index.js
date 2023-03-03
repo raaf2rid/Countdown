@@ -1,4 +1,5 @@
 let dayCount = []
+const freedom = document.querySelector('#freedom')
 
 function countdown(dateEnd) {
   var timer, days, hours, minutes, seconds;
@@ -39,6 +40,11 @@ function countdown(dateEnd) {
       `${("0" + hours).slice(-2)}<span>Hours</span>`;
       document.getElementById("minutes").innerHTML =  `${("0" + minutes).slice(-2)}<span>Minutes</span>`;
       document.getElementById("seconds").innerHTML = `${("0" + seconds).slice(-2)}<span>Seconds</span>`;
+
+
+      freedom.innerHTML = 
+      `
+     To Freedom`
 
 
       const boxes = []
@@ -146,7 +152,7 @@ function countdown(dateEnd) {
       whiteBoxes.innerHTML = boxes2.join('')
 
    
-        const freedom = document.querySelector('#freedom')
+        
         
         const world = document.querySelector('#world')
       
@@ -156,13 +162,13 @@ function countdown(dateEnd) {
         <span>Yes! Yes! Yes! 
         <br>
         250 days have passed!<br>
-        The wait is Over <br>And...
+        The wait is Over <br>And Now...
         <br>
         <br>
-        You are Free!</span>`
+        <span class="free" > You are Free!</span></span>`
 
         
-        freedom.style.transform = "translate(0)"
+        freedom.style.transform = "translate(-0)"
         freedom.style.textAlign = "center"
         world.style.visibility = "visible"
 

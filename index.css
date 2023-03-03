@@ -107,10 +107,11 @@ body{
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff, 0px -2px 0 #fff, 2px -3px 2px rgba(0,0,0,0);
-  transform: translate(-230px, 10px);
+  transform: translate(-208px, 10px);
   font-weight: 800;
   /* background-color: rgba(0, 0, 0, 0.2); */
   padding: 1rem;
+  letter-spacing: 4px;
 }
 
 .box2{
@@ -151,6 +152,11 @@ span{
   text-transform: uppercase;
 }
 
+.free{
+  font-size: 3.5rem; 
+  margin-left:-50px;
+}
+
 @media only screen and (max-width: 600px) {
 
   .timer-div{
@@ -167,7 +173,7 @@ span{
     color: #e2e2e2;
   }
   #freedom {
-    font-size: 1.5rem;
+   
     transform: translate(0px, 0px);
     text-shadow: none;
     font-weight: 800;
@@ -175,5 +181,8 @@ span{
   }
   span{
     align-items: center;
+  }
+  .free{
+    margin-left: 0;
   }
 }
