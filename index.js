@@ -1,4 +1,5 @@
 let dayCount = []
+
 const freedom = document.querySelector('#freedom')
 
 function countdown(dateEnd) {
@@ -50,11 +51,19 @@ function countdown(dateEnd) {
       const boxes = []
 
       const boxes2 = []
+      let counter = 250
+
       
       for (let i = 0; i < 250; i++){
+
+        counter --
+
+
+        boxes.push(`<div class="box"><p class="day-count">${counter+1}</p></div>`)
+        
+
       
-        boxes.push(`<div class="box"><p class="day-count">${i+1}</p></div>`)
-      
+        
       }
 
       const bg = document.querySelector('.background')
@@ -62,18 +71,23 @@ function countdown(dateEnd) {
 
       const currentBox = document.querySelectorAll(".box");
 
+      let counterB = 250
       
-      for (let i = 0; i < 250 - days; i++){
-      
-        boxes2.push(`<div class="box2"><strong>${i+1}</strong></div>`)
 
+      for (let i = 0; i < 250 - days; i++){
+
+
+       
+       counterB--
       
+        boxes2.push(`<div class="box2"><strong>${counterB+1}</strong></div>`)
+
       
       }
 
-      for (let i = 0; i < 249 - days; i++){
       
 
+      for (let i = 0; i < 249 - days; i++){
         
 
         currentBox[i].style.visibility = "hidden"
@@ -137,17 +151,27 @@ function countdown(dateEnd) {
 
       const boxes2 = []
       
-     
+      let counter = 250
       
       for (let i = 0; i < 250; i++){
+
+        counter --
       
-        boxes2.push(`<div class="box2"><strong>${i+1}</strong></div>`)
+        boxes2.push(`<div class="box2"><strong>${counter+1}</strong></div>`)
       
       }
 
 
       const whiteBoxes = document.querySelector('.white-boxes')
 
+      const currentBox = document.querySelectorAll(".box");
+
+      for (let i = 0; i < 250 - days; i++){
+        
+
+        currentBox[i].style.visibility = "hidden"
+      
+      }
      
 
       whiteBoxes.innerHTML = boxes2.join('')
@@ -181,12 +205,12 @@ function countdown(dateEnd) {
 }
 
 
-// countdown('2/3/2023 1:8:00 PM');
+// countdown('3/3/2023 2:44:00 PM');
 
 
 
 
-countdown('11/8/2023 9:38:00 PM')
+countdown('11/8/2023 6:00:00 PM')
 
 
 
