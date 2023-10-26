@@ -211,9 +211,6 @@ function countdown(dateEnd) {
 }
 
 
-// countdown('3/3/2023 2:44:00 PM');
-
-
 
 
 countdown('11/2/2023 2:00:00 PM')
