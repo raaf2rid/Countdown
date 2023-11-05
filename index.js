@@ -213,7 +213,7 @@ function countdown(dateEnd) {
 
 
 
-countdown('11/10/2023 2:00:00 PM')
+countdown('11/8/2023 2:00:00 PM')
 
 
 
