@@ -16,7 +16,7 @@ body{
   background: linear-gradient(-45deg, #0bdfb9, #e2e2e2, #23a6d5, #ff4d00);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
-  /* background: transparent; */
+  overflow: hidden;
 }
 
 
@@ -41,8 +41,7 @@ body{
   align-content: flex-start;
   justify-content: flex-start;
   animation: gradient 15s ease infinite;
-  
-  /* position: absolute; */
+
 }
 
 
@@ -185,9 +184,6 @@ span{
     padding: 5rem 0;
   }
   #freedom {
-    /* position: relative; */
-    /* border: 1px solid red; */
-    padding-left: 2rem;
     transform: translate(0px, 0px);
     text-shadow: none;
     font-weight: 800;
